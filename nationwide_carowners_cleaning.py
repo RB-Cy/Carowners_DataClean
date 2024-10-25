@@ -144,7 +144,7 @@ def split_csv_by_size(file_path, output_dir, garbage_file, duplicates_file, clea
     print(f"Total number of invalid emails saved to garbage: {invalid_email_count}")
 
     # Count the number of entries in the cleaned data
-    cleaned_df = pd.read_csv(cleaned_file, encoding='utf-8-sig',  )
+    cleaned_df = pd.read_csv(cleaned_file, encoding='utf-8-sig', low_memory=False )
     print(f"Total number of entries in the cleaned data: {len(cleaned_df)}")
 
 
