@@ -4,7 +4,7 @@ This Python script processes a large CSV of uncleaned data from a leak in 2020 c
 
 **Features/How it works:**
 
-1. **CSV Splitting**: The script reads a large CSV file in chunks and splits it into smaller files of a specified size (default: ~100MB per chunk) for easier processing since the dataset was so large.
+1. **CSV Splitting**: The script reads a large CSV file in chunks and splits it into smaller files of a specified size (default: ~100MB per chunk) for easier processing since the dataset is so large.
 2. **Data Cleaning**:
     - Renames columns from Chinese to English based on predefined mapping. The script uses a dictionary to map Chinese column names to English.
     - Removes unwanted columns (configuration, postal_code).
